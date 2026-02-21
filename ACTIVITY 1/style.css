@@ -1,0 +1,44 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #000000;
+    color: #c9d1d9
+}
+h1{
+    color:red
+}
+/* atrribute*/
+a{
+    color:green;
+    text-decoration: none;
+}
+a:hover{
+    color:orange;
+}
+/*clild selector*/
+ul > li{
+    font-weight: bold;
+}
+/*sibling selector*/
+h1 + p{
+    color:blue;
+    padding: 10px;
+    border-radius: 5px;
+}
+/*psuedo class*/
+ul li:first-child{
+    color:yellow;
+}
+/*not;selector psuedo class*/
+p:not(:first :first-of-type){
+    text-decoration: underline;
+}
+/*before psuedo element*/
+ul li::before{
+    content: "• ";
+    color: red;
+}
+/*first letter psuedo element*/
+p::first-letter{
+    font-size: 200%;
+    color: navy;
+}
